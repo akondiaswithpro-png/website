@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body background="Aswith Sources/HD-wallpaper-white-hexagon-geometric-shapes-white-aesthetic-thumbnail.jpg">
+
+<br/>
+<center>
+  <div class="hover-img">
+    <img src="Aswith Sources/Screenshot_20250824_083418-removebg-preview.png" alt="Profile">
+  </div>
+</center>
+
+<style>
+.hover-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hover-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Subtle scale effect on hover */
+.hover-img:hover img {
+  transform: scale(1.05);
+}
+
+/* Glowing border on hover */
+.hover-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  background: linear-gradient(135deg, #4a90e2, #72b6f9);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+          mask-composite: exclude;
+  padding: 3px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.hover-img:hover::before {
+  opacity: 1;
+}
+
+/* Ripple pulse effect */
+.hover-img::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(74, 144, 226, 0.35);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hover-img:hover::after {
+  animation: ripple 0.8s ease-out forwards;
+}
+
+@keyframes ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.6;
+  }
+  80% {
+    width: 260px;
+    height: 260px;
+    opacity: 0.2;
+  }
+  100% {
+    width: 280px;
+    height: 280px;
+    opacity: 0;
+  }
+}
+</style>
+
+<br/>
+<div class="center-container">
+  <h1 class="rainbow-text">ASWITH PRO</h1>
+</div>
+
+<style>
+/* Center text */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background: transparent;
+}
+
+/* Rainbow animated text */
+.rainbow-text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(
+    90deg, 
+    #ff6b6b, 
+    #feca57, 
+    #48dbfb, 
+    #1dd1a1, 
+    #5f27cd, 
+    #ff6b6b
+  );
+  background-size: 50% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-shift 5s linear infinite;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Gradient animation */
+@keyframes rainbow-shift {
+  0% { background-position: 0% center; }
+  100% { background-position: 500% center; }
+}
+</style>
+
+<hr width="30%" color="Aqua"/>
+<center><p>Content Creator, Coder and Gamer.</p></center>
+<hr width="60%" color="Aqua"/>
+
+<CENTER><H1>Content</H1></CENTER>
+<div class="center">
+  <a href="https://www.youtube.com/@ASWITH_PRO" target="_blank" class="yt-link">
+    Visit My YouTube
+  </a>
+</div>
+
+<style>
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+  }
+
+  .yt-link {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    background: #1a1a1a;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  }
+
+  .yt-link:hover {
+    transform: scale(1.1);
+    background: linear-gradient(270deg,
+      red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400% 400%;
+    animation: rainbow 6s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0 0 20px rgba(255,255,255,0.7);
+  }
+
+  @keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+</style>
+
+</body>
